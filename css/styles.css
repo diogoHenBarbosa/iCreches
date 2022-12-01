@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #64a19d;
+  --bs-primary: #f200ff;
   --bs-secondary: #7464a1;
   --bs-success: #67c29c;
   --bs-info: #1cabc4;
@@ -58,10 +58,10 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --bs-body-font-family: Lato, Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -12497,7 +12497,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 #mainNav .navbar-toggler {
@@ -12544,18 +12544,21 @@ body {
   }
 
   #mainNav .nav-link {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     transition: none;
     padding: 2rem 1.5rem;
-    color: #1E1E1E;
+    color: #FFFFFF;
   }
 
-  #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+  #mainNav .logo-top,
+  .nav-link:hover {
+    color: rgba(0, 0, 0, 0.5);
   }
 
   #mainNav .nav-link:active {
     color: #fff;
   }
+
 
   #mainNav.navbar-shrink {
     background-color: #fff;
@@ -12584,6 +12587,11 @@ body {
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+
+
+  .logo-top {
+    background: #1E1E1E;
+  }
 }
 
 .btn {
@@ -12602,9 +12610,8 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(180deg, rgba(255, 147, 235, 0) 0%, #FF93EB 100%), url("../assets/img/bg-masthead-copia.jpg");
+  background: linear-gradient(180deg, rgba(255, 147, 235, 0) 0%, #FF93EB 100%), url("../assets/img/img_fundo.png");
   ;
-  opacity: 0.6;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -12613,11 +12620,11 @@ body {
 
 .masthead h1,
 .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Pacifico", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -12648,7 +12655,6 @@ body {
   .masthead .h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
-    letter-spacing: 0.8rem;
   }
 
   .masthead h2,
@@ -12661,7 +12667,6 @@ body {
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(180deg, #FF93EB 0%, rgba(255, 147, 235, 0) 100%);
-  opacity: 0.6;
 }
 
 .about-section p {
@@ -12767,4 +12772,18 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+#mainNav .logo-top {
+  font-family: "Pacifico", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: #FFFFFF;
+  font-size: 26px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#mainNav .logo-top:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
